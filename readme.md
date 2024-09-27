@@ -10,7 +10,7 @@
 2. **Word Frequency Counter:** Read a text file (example code included) and count the frequency of each word, ignoring case.
 	Usage: `python word_frequency.py <input_file>`  
 	
-	Your task: Complete the word_frequency() function to count word frequencies sorted alphabetically. Run the script on 'alice_in_wonderland.txt'.
+	Your task: Complete the word_frequency() function to count word frequencies sorted alphabetically and limit to the first 20 words. Run the script on 'alice_in_wonderland.txt'.
 	
 	Hints:
 	- Use a dictionary to store word frequencies
