@@ -18,12 +18,19 @@ Hints:
 """
 
 import sys
+import string 
 
 def word_frequency(text):
     frequencies = {} # Dictionary to store word frequencies
-
-    # Your code here
+    words = text.lower().split()
     
+    for word in words:
+        no_punct = word.strip(string.punctuation)
+        if no_punct in frequencies:
+            frequencies[no_punct] += 1 
+        else:
+            frequencies[no_punct] = 1 
+    frequencies = dict(sorted(frequencies.items())[:20])
     return frequencies
 
 # Scaffold for opening a file and running word_frequency() on the contents
