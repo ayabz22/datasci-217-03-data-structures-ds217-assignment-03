@@ -16,13 +16,12 @@ from datetime import date
 
 
 quotes = [
-    # Create a list of quotes here
+    "believe in yourself", "be you", "smile more", "dream big", "everything happens for a reason",
+    "always strive to be the best"
 ]
 
 def get_quote_of_the_day(quotes):
-    todays_quote = None
-
-    # Your code here
+    todays_quote = random.choice(quotes)
     
     return todays_quote
 
